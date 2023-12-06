@@ -48,7 +48,7 @@ def getElevationHeight(gpsList, pathToData):
             longitude_block_str = "00" + str(math.floor(abs(longitude)))
     
     
-    #gets name of FABDEM 1 x 1 degree block tif FIXME
+    #gets name of FABDEM 1 x 1 degree block tif
     blockNameStr = pathToData + lat_letter + latitude_block_str + long_letter + longitude_block_str + "_FABDEM_V1-2.tif"
     
     
@@ -111,7 +111,7 @@ def getElevationHeight(gpsList, pathToData):
             long_scalar = abs(longitude) - math.floor(abs(longitude))
         else:
             long_scalar = math.ceil(abs(longitude)) - abs(longitude)
-            
+    
     
     # plt.imshow(cropData, cmap='gray')
     # plt.show()
